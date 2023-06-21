@@ -72,6 +72,13 @@ module.exports = {
         leadingUnderscore: 'forbid',
         trailingUnderscore: 'forbid',
       },
+      {
+        selector: ['parameter'],
+        modifiers: ['unused'],
+        format: ['camelCase'],
+        leadingUnderscore: 'require',
+        trailingUnderscore: 'forbid'
+      }
     ],
     'linebreak-style': [
       'error',
@@ -85,7 +92,7 @@ module.exports = {
       'error',
       'always'
     ],
-    'no-unused-vars': [
+    '@typescript-eslint/no-unused-vars': [
       'error',
       { 'varsIgnorePattern': '^_', 'argsIgnorePattern': '^_' },
     ],
